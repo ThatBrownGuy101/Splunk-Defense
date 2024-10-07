@@ -1,4 +1,4 @@
-# Splunk-Defense (need to add screenshots, report and presentation)
+# Splunk-Defense
 
 ## Objective
 
@@ -51,6 +51,8 @@ o	Alert Analysis: I tested whether the alerts I configured earlier were triggere
 o	Dashboard Analysis: I updateed the dashboards with the attack data, using visualizations to analyze any abnormalities in signature counts, user activities, and HTTP requests. This helped me identify new attack patterns, such as the unexpected geographic locations or the unusual user agents accessing the servers.
 
 The last thing I did was compile my findings into a presentation that summarized the effectiveness of the monitoring solution and highlighted the suspicious activities that were detected. I also provided recommendations for strengthening VSI’s security posture.
+
+<a href="https://github.com/ThatBrownGuy101/Splunk-Defense/blob/main/Splunk-Defense%20Presentation.pptx">Splunk-Defense Presentation</a> and <a href="https://github.com/ThatBrownGuy101/Splunk-Defense/blob/main/Splunk-Defense%20Questions.pdf">Splunk-Defense Questions</a>
  
 Through this project, I developed valuable experience in building and testing a monitoring system, creating custom reports and alerts, and analyzing data to detect cyber threats. These skills are essential in implementing effective defensive security measures and ensuring a quick, informed response to incidents.
 
