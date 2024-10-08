@@ -25,32 +25,32 @@ Theis projects aim was to take on the role of a SOC analyst to design and implem
 
 ## Steps
 
-This divided into two distinct parts: Part 1 – Defensive Security and Part 2 – Monitoring & Analyzing Attacks. In this role, I act as a Security Operations Center (SOC) analyst for Virtual Space Industries (VSI), a company that specializes in virtual-reality software. VSI suspects that a competitor, JobeCorp, might attempt cyberattacks to disrupt its business. My objective is to first design a monitoring solution using Splunk, and then assess its effectiveness by analyzing simulated attack logs.
+This divided into two distinct parts: Part 1 – Defensive Security and Part 2 – Monitoring & Analyzing Attacks. In this role, my team and I act as a Security Operations Center (SOC) analysts for Virtual Space Industries (VSI), a company that specializes in virtual-reality software. VSI suspects that a competitor, JobeCorp, might attempt cyberattacks to disrupt its business. My objective is to first design a monitoring solution using Splunk, and then assess its effectiveness by analyzing simulated attack logs.
  
 Part 1: Defensive Security
 
-I focued on designing and configuring a monitoring solution to safeguard VSI’s critical systems, specifically its Windows Server and Apache Web Server. 
-Here is a breakdown of the steps I took. 
+We focued on designing and configuring a monitoring solution to safeguard VSI’s critical systems, specifically its Windows Server and Apache Web Server. 
+Here is a breakdown of the steps we took. 
 1.	Loading and Analyzing Logs:
-o	I start by uploading VSI’s standard operational logs from both the Windows Server and the Apache Web Server into Splunk. These logs represent regular, expected server activity and serve as a baseline to identify any unusual patterns later on.
+We started by uploading VSI’s standard operational logs from both the Windows Server and the Apache Web Server into Splunk. These logs represent regular, expected server activity and serve as a baseline to identify any unusual patterns later on.
 2.	Creating Reports, Alerts, and Dashboards:
-o	Reports: I design reports that display essential metrics, including activity success and failure rates, as well as severity levels for the Windows Server. On the Apache server side, I generate reports to monitor HTTP request types and identify high-traffic referrer domains.
-o	Alerts: I set up automated alerts to detect and respond to suspicious activities in real-time. For instance, on the Windows Server, alerts are triggered for anomalies such as high volumes of failed logins, unexpected successful logins, or any account deletions. For the Apache server, I configure alerts to detect excessive HTTP POST requests or access from countries outside the U.S.
-o	Dashboards: I create customized, interactive dashboards for each server. These dashboards include visualizations such as line charts, bar graphs, and heat maps to give VSI an intuitive, real-time overview of server activity. I also include time-range filters to facilitate dynamic analysis over various periods.
+Reports: We designed reports that display essential metrics, including activity success and failure rates, as well as severity levels for the Windows Server. On the Apache server side, we generated reports to monitor HTTP request types and identify high-traffic referrer domains.
+Alerts: We set up automated alerts to detect and respond to suspicious activities in real-time. For instance, on the Windows Server, alerts are triggered for anomalies such as high volumes of failed logins, unexpected successful logins, or any account deletions. For the Apache server, we configure alerts to detect excessive HTTP POST requests or access from countries outside the U.S.
+Dashboards: We created customized, interactive dashboards for each server. These dashboards include visualizations such as line charts, bar graphs, and heat maps to give VSI an intuitive, real-time overview of server activity. We also included time-range filters to facilitate dynamic analysis over various periods.
 3.	Installing a Splunk Add-On:
-o	To enhance monitoring capabilities, I install an add-on from Splunkbase that provides additional security features. This add-on allowed me to track specific threat vectors and enhance VSI’s ability to respond proactively to potential threats.
+To enhance monitoring capabilities, I install an add-on from Splunkbase that provides additional security features. This add-on allowed me to track specific threat vectors and enhance VSI’s ability to respond proactively to potential threats.
  
 Part 2: Monitoring and Analyzing Attacks
 
-I simulated an attack scenario by loading and analyzing newly provided logs that represent attacks targeting VSI’s systems. This phase is dedicated to evaluating how well the monitoring solution can detect and respond to these attacks.
+We simulated an attack scenario by loading and analyzing newly provided logs that represent attacks targeting VSI’s systems. This phase is dedicated to evaluating how well the monitoring solution can detect and respond to these attacks.
 1.	Loading and Analyzing Attack Logs:
-o	I loaded the attack logs for both the Windows Server and the Apache Web Server into Splunk and by comparing this data with the baseline, I better understood the nature of the attacks and assessed the effectiveness of the monitoring setup.
+We loaded the attack logs for both the Windows Server and the Apache Web Server into Splunk and by comparing this data with the baseline, we better understood the nature of the attacks and assessed the effectiveness of the monitoring setup.
 2.	Reviewing Reports, Alerts, and Dashboards:
-o	Report Analysis: I reviewed the reports created in Part 1 and compared the baseline data with the attack data to identify any unusual changes, such as spikes in failed logins or an increase in certain HTTP methods. This helped me detect patterns that correlated with the attack.
-o	Alert Analysis: I tested whether the alerts I configured earlier were triggered by the attack logs, determining if the threshold settings I selected were appropriate.
-o	Dashboard Analysis: I updateed the dashboards with the attack data, using visualizations to analyze any abnormalities in signature counts, user activities, and HTTP requests. This helped me identify new attack patterns, such as the unexpected geographic locations or the unusual user agents accessing the servers.
+Report Analysis: We reviewed the reports created in Part 1 and compared the baseline data with the attack data to identify any unusual changes, such as spikes in failed logins or an increase in certain HTTP methods. This helped us detect patterns that correlated with the attack.
+Alert Analysis: We tested whether the alerts we configured earlier were triggered by the attack logs, determining if the threshold settings we selected were appropriate.
+Dashboard Analysis: We updateed the dashboards with the attack data, using visualizations to analyze any abnormalities in signature counts, user activities, and HTTP requests. This helped us identify new attack patterns, such as the unexpected geographic locations or the unusual user agents accessing the servers.
 
-The last thing I did was compile my findings into a presentation that summarized the effectiveness of the monitoring solution and highlighted the suspicious activities that were detected. I also provided recommendations for strengthening VSI’s security posture.
+The last thing we did was compile our findings into a presentation that summarized the effectiveness of the monitoring solution and highlighted the suspicious activities that were detected. We also provided recommendations for strengthening VSI’s security posture.
 
 <a href="https://github.com/ThatBrownGuy101/Splunk-Defense/blob/main/Splunk-Defense%20Presentation.pptx">Splunk-Defense Presentation</a> and <a href="https://github.com/ThatBrownGuy101/Splunk-Defense/blob/main/Splunk-Defense%20Questions.pdf">Splunk-Defense Questions</a>
  
